@@ -1,6 +1,6 @@
 # Janus
 ## Intent: 
-  In order to further the development of a home use level of robotics and automation design, we must first enable the layman, with only basic computer skills, to create the robotics they need in a hobby type time-frame. It is these laymen with hobbies throughout history that have devised ingenious ways of instituting new technologies, and handing them a tool to abstract away all of the computing issues, and to let the just "do the thing," is the first step towards innumberable technological, and quality of life advances. The intent of Jane is to be the tool that allows this to happen.
+  In order to further the development of a home use level of robotics and automation design, we must first enable the layman, with only basic computer skills, to create the robotics they need in a hobby type time-frame. It is these laymen with hobbies throughout history that have devised ingenious ways of instituting new technologies, and handing them a tool to abstract away all of the computing issues, and to let them just "do the thing," is the first step towards innumberable technological, and quality of life advances. The intent of Jane is to be the tool that allows this to happen.
 
 
 # Architectural naming conventions:
