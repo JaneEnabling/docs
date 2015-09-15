@@ -83,7 +83,7 @@ Well what about that bad code that technically works, but is really buggy, and n
 What we are making:
 - A network platform to deliver and execute crowd-sourced drivers for any electronic devise, allowing anything from a simple LED on to full home automation, or even fully automated drone flight.
 - A method of deployment through a common api/ui
-- A 
+- A method of home use through a remarkably similarly feeling api/ui ;)
 
 
 
