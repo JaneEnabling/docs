@@ -48,28 +48,28 @@ Any configs, setup requirements, how-to's or otherwise should find itself in her
 
   Users have a profile, and can publish "code-blocks", these may be either public or private - private accounts should pay ie. Github
 
-    if CB's are published public
-      - everyone can see them; They don't look like code. They look like color coded buttons, or bricks, or symbols... you get the point, something small, drag and droppable, and looks nothing like a piece of code.
-      - theses code-blocks can have other code blocks dropped in them, this actually makes a new code-block. The new code-block executes both blocks of code, either synchronously or asynchronously, dependant on the function
+  if CB's are published public
+    - everyone can see them; They don't look like code. They look like color coded buttons, or bricks, or symbols... you get the point, something small, drag and droppable, and looks nothing like a piece of code.
+    - theses code-blocks can have other code blocks dropped in them, this actually makes a new code-block. The new code-block executes both blocks of code, either synchronously or asynchronously, dependant on the function
 
-    if CB's are published private 
-      - only allowable entities may access them ie. team pages, company pages, etc
+  if CB's are published private 
+    - only allowable entities may access them ie. team pages, company pages, etc
 
-    Users can take any code blocks they have access to, and combine them with other code blocks in a stacking manor.
-    Users can register "bots", which are entities that are JaneEnabled, and may receive CB's.
+  Users can take any code blocks they have access to, and combine them with other code blocks in a stacking manor.
+  Users can register "bots", which are entities that are JaneEnabled, and may receive CB's.
 
-      boiled down to a simple example: 
-      CB1 is a function to turn a GPIO pin on at x time. 
-      CB2 is a function to turn a GPIO pin off at y time. 
+    boiled down to a simple example: 
+    CB1 is a function to turn a GPIO pin on at x time. 
+    CB2 is a function to turn a GPIO pin off at y time. 
 
-      User takes CB1 and sticks it in a new code-block, with CB2, producing CB3.
-      User sends code-block (CB3) to their bot
+    User takes CB1 and sticks it in a new code-block, with CB2, producing CB3.
+    User sends code-block (CB3) to their bot
 
-      The Jane server inserts the received CB and calls it as middleware
+    The Jane server inserts the received CB and calls it as middleware
 
-        at x time, the function configures a JSON representation of the GPIO pin being on, and passes to the janett c++ GPIO reader/writer, which takes a JSON object, and returns a JSON object
+      at x time, the function configures a JSON representation of the GPIO pin being on, and passes to the janett c++ GPIO reader/writer, which takes a JSON object, and returns a JSON object
 
-        at y time, the function configures a JSON representation of the GPIO pin being off, and passes to the janett c++ GPIO reader/writer
+      at y time, the function configures a JSON representation of the GPIO pin being off, and passes to the janett c++ GPIO reader/writer
 
 
 
