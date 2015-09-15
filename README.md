@@ -3,28 +3,27 @@ Any configs, setup requirements, how-to's or otherwise should find itself in her
 
 # Janus
 ## Intent: 
-    In order to further the development of a home use level of robotics and automation design, we must first enable the layman, with only basic computer skills, to create the robotics they need in a hobby type time-frame. It is these laymen with hobbies throughout history that have devised ingenious ways of instituting new technologies, and handing them a tool to abstract away all of the computing issues, and to let the just "do the thing," is the first step towards innumberable technological, and quality of life advances. The intent of Jane is to be the tool that allows this to happen.
+  In order to further the development of a home use level of robotics and automation design, we must first enable the layman, with only basic computer skills, to create the robotics they need in a hobby type time-frame. It is these laymen with hobbies throughout history that have devised ingenious ways of instituting new technologies, and handing them a tool to abstract away all of the computing issues, and to let the just "do the thing," is the first step towards innumberable technological, and quality of life advances. The intent of Jane is to be the tool that allows this to happen.
 
 
 # Architectural naming conventions:
 
-  ### bot-piece - any computer.
+### bot-piece - any computer.
   - in context, think of it as any micro-computer, but really though, any computer with wifi access.
 
-  ### Janus - the name of the entire suite including front facing user api, as well as the individual bot-pieces, and everything in between, in short, Janus would be the 'system name' as Janus is a system of systems.
+### Janus 
+- the name of the entire suite including front facing user api, as well as the individual bot-pieces, and everything in between, in short, Janus would be the 'system name' as Janus is a system of systems.
 
+These 3 are all just different instances of the same "Jane", they simply represent the specific instances roll within an architecture
 
-  These 3 are all just different instances of the same "Jane", they simply represent the specific instances roll within an architecture
+### Jane - the bot-piece node software
+- connects to other Janes using websockets in a lan
+- Read/wrties pin inputs/outputs from the jane++ software
+- Passes command to sub level Janett devices, in a JaneBrain type fashion. 
 
+   * this is also used as a reference to a single bot-piece with configured software, when used in this way it implies that the configured bot-piece is NOT a JaneBrain and NOT just a Janett
 
-  ### Jane - the bot-piece node software
-  - connects to other Janes using websockets in a lan
-  - Read/wrties pin inputs/outputs from the jane++ software
-  - Passes command to sub level Janett devices, in a JaneBrain type fashion. 
-
-     * this is also used as a reference to a single bot-piece with configured software, when used in this way it implies that the configured bot-piece is NOT a JaneBrain and NOT just a Janett
-
-  ### JaneBrain - The controlling node in the bot-piece architecture.
+### JaneBrain - The controlling node in the bot-piece architecture.
   - stores and forwards code-blocks (CB's) for child Janes
   - if a task requires coordination of components operated by seperate Janes, the JaneBrain would perform the coordination logic
         
@@ -37,13 +36,13 @@ Any configs, setup requirements, how-to's or otherwise should find itself in her
         to change, and in what way, then sends those commands along as a JSON 
         singleton object to be written to output, or as a stored CB.
 
-  ### Janett - a "end node" bot-piece, 
-  - controls only self pin-writes/self outputs utilizing the jane++ software
-  - is sent a JSON object, and writes it to the pins or other output. 
-  - it performs no logic. It only receives JSON orders, and returns JSON snapshots of itself
-  - the primary difference in a Janett configured device vs a Jane is that the Janett cannot pass information forward to another node, this is meant to be used on devices with weaker computing power, ie, the arduino. Great at writing to gpio, terrible at processing.
+### Janett - a "end node" bot-piece, 
+- controls only self pin-writes/self outputs utilizing the jane++ software
+- is sent a JSON object, and writes it to the pins or other output. 
+- it performs no logic. It only receives JSON orders, and returns JSON snapshots of itself
+- the primary difference in a Janett configured device vs a Jane is that the Janett cannot pass information forward to another node, this is meant to be used on devices with weaker computing power, ie, the arduino. Great at writing to gpio, terrible at processing.
 
-  - Thus named because the pin-write code is in C++ therefore Jane++ -> Janett, maybe that will help with the visual
+- Thus named because the pin-write code is in C++ therefore Jane++ -> Janett, maybe that will help with the visual
 
 
 # Primary Usage Goal
