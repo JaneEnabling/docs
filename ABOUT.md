@@ -15,10 +15,10 @@ These 3 are all just different instances of the same "Jane", they simply represe
 
 ### Jane - The bot-piece node.js software.
 - Connects to other Janes using websockets in a lan
-- Read/wrties pin inputs/outputs from the jane++ software
-- Passes command to sub level Janett devices, in a JaneBrain type fashion. 
+- Read/writes pin inputs/outputs from the jane++ software
+- Passes command to sub level Janett devices, and may coordinate between multiple Janetts in a JaneBrain type fashion. 
 
-   * This is also used as a reference to a single bot-piece with configured software, when used in this way it implies that the configured bot-piece is NOT a JaneBrain and NOT just a Janett
+ * This is also used as a reference to a single bot-piece with configured software, when used in this way it implies that the configured bot-piece is NOT a JaneBrain and NOT just a Janett
 
 ### JaneBrain - The controlling node in the bot-piece architecture.
   - Stores and forwards code-blocks (CB's) for child Janes
