@@ -28,9 +28,10 @@ Any configs, setup requirements, how-to's or otherwise should find itself in her
   JaneBrain - The controlling node in the bot-piece architecture.
   - stores and forwards code-blocks (CB's) for child Janes
   - if a task requires coordination of components operated by seperate Janes, the JaneBrain would perform the coordination logic
-      ie. 
+        ie. 
+        
         a drone uses 4 fans to manuever. each may be controlled by a single Jane, which all report to either a 5th JaneBrain device, or one of the 4 Janes (which would be the acting JaneBrain).
-  
+
   Janett - a "end node" bot-piece, 
   - controls only self pin-writes/self outputs utilizing the jane++ software
   - is sent a JSON object, and writes it to the pins or other output. 
