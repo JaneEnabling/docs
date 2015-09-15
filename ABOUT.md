@@ -76,7 +76,7 @@ Users can register "bots", which are entities that are JaneEnabled, and may rece
       and passes to the janett c++ GPIO reader/writer
 
 
-Well what about that bad code that technically works, but is really buggy, and no-one likes? This is were we start to look at the concept of crowd-sourcing at its finest. Public codes are all free. Good CD's get voted up. Bad CB's get voted down. If you don't like a CB, write one yourself, or combine until you get what you need.
+Well what about that bad code that technically works, but is really buggy, and no-one likes? This is were we start to look at the concept of crowd-sourcing at its finest. Public codes are all free. Good CB's get voted up. Bad CB's get voted down. If you don't like a CB, write one yourself, or combine until you get what you need.
 
 
 
