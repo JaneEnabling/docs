@@ -35,8 +35,8 @@ These 3 are all just different instances of the same "Jane", they simply represe
         --This is an extreme example, that I hope will be accomplished someday
 
 ### Janett - An "end node" bot-piece, 
-- Controls only self pin-writes/self outputs utilizing the jane++ software
-- Ss sent a JSON object, and writes it to the pins or other output. 
+- Controls only self pin-writes/self outputs utilizing the Jane++ software
+- Is sent a JSON object, and writes it to the pins or other output. 
 - It performs no logic. It only receives JSON orders, and returns JSON snapshots of itself
 - The primary difference in a Janett configured device vs a Jane is that the Janett cannot pass information forward to another node, this is meant to be used on devices with weaker computing power, ie, the arduino. Great at writing to gpio, terrible at processing.
 
@@ -53,6 +53,7 @@ Users have a profile, and can publish "code-blocks", these may be either public 
 
 if CB's are published public
   - Everyone can see them; They don't look like code. They look like color coded buttons, or bricks, or symbols... you get the point, something small, drag and droppable, and looks nothing like a piece of code.
+  - Indexed by devise modal / functionality / role of Jane device
 
 if CB's are published private 
   - Only allowable entities may access them ie. team pages, company pages, etc
@@ -77,9 +78,12 @@ Users can register "bots", which are entities that are JaneEnabled, and may rece
       and passes to the janett c++ GPIO reader/writer
 
 
-Well what about that bad code that technically works, but is really buggy, and no-one likes? This is were we start to look at the concept of crowd-sourcing at its finest. Public codes are all free. Good CB's get voted up. Bad CB's get voted down. If you don't like a CB, write one yourself, or combine until you get what you need.
+Well what about that bad code that technically works, but is really buggy, and no-one likes? This is were we start to look at the concept of crowd-sourcing at its finest. Public codes are all free. Good CB's get voted up. Bad CB's get voted down. If you don't like a CB, write one yourself, or combine until you get what you need. I'll put more details on this later, it's a needed, yet not focal point.
 
-
+What we are making:
+- A network platform to deliver and execute crowd-sourced drivers for any electronic devise, allowing anything from a simple LED on to full home automation, or even fully automated drone flight.
+- A method of deployment through a common api/ui
+- A 
 
 
 
