@@ -8,12 +8,12 @@
 ### Bot-piece - Any computer.
   - In context, think of it as any micro-computer, but really though, any computer with wifi access.
 
-### Janus 
+### Janus - The whole damned thing
 - The name of the entire suite including front facing user api, as well as the individual bot-pieces, and everything in between, in short, Janus would be the 'system name' as Janus is a system of systems.
 
 These 3 are all just different instances of the same "Jane", they simply represent the specific instances roll within an architecture
 
-### Jane - the bot-piece node software
+### Jane - The bot-piece node.js software.
 - Connects to other Janes using websockets in a lan
 - Read/wrties pin inputs/outputs from the jane++ software
 - Passes command to sub level Janett devices, in a JaneBrain type fashion. 
@@ -33,7 +33,7 @@ These 3 are all just different instances of the same "Jane", they simply represe
         to change, and in what way, then sends those commands along as a JSON 
         singleton object to be written to output, or as a stored CB.
 
-### Janett - a "end node" bot-piece, 
+### Janett - An "end node" bot-piece, 
 - Controls only self pin-writes/self outputs utilizing the jane++ software
 - Ss sent a JSON object, and writes it to the pins or other output. 
 - It performs no logic. It only receives JSON orders, and returns JSON snapshots of itself
@@ -44,21 +44,20 @@ These 3 are all just different instances of the same "Jane", they simply represe
 
 # Primary Usage Goal
 
-  Think app modularization, with stacking capability
-  Github meets The android marketplace meets complex modularized application stacking meets the Node "require" library
-  ...all in javascript...and maybe some c++
+Think app modularization, with stacking capability.
+Crowd source coding meets The Android marketplace, meets complex application stacking, meets the Node.js "require" library (the concept of the library that is)...all in javascript...and maybe some c++
 
-  Users have a profile, and can publish "code-blocks", these may be either public or private - private accounts should pay ie. Github
+Users have a profile, and can publish "code-blocks", these may be either public or private - private accounts should pay ie. Github
+- These code-blocks can have other code blocks dropped in them, this actually makes a new code-block. The new code-block executes both blocks of code, either synchronously or asynchronously, dependant on the function, or even as independant, non-interacting pieces of code.
 
-  if CB's are published public
-    - Everyone can see them; They don't look like code. They look like color coded buttons, or bricks, or symbols... you get the point, something small, drag and droppable, and looks nothing like a piece of code.
-    - Theses code-blocks can have other code blocks dropped in them, this actually makes a new code-block. The new code-block executes both blocks of code, either synchronously or asynchronously, dependant on the function
+if CB's are published public
+  - Everyone can see them; They don't look like code. They look like color coded buttons, or bricks, or symbols... you get the point, something small, drag and droppable, and looks nothing like a piece of code.
 
-  if CB's are published private 
-    - Only allowable entities may access them ie. team pages, company pages, etc
+if CB's are published private 
+  - Only allowable entities may access them ie. team pages, company pages, etc
 
-  Users can take any code blocks they have access to, and combine them with other code blocks in a stacking manor.
-  Users can register "bots", which are entities that are JaneEnabled, and may receive CB's.
+Users can take any code blocks they have access to, and combine them with other code blocks in a stacking manor.
+Users can register "bots", which are entities that are JaneEnabled, and may receive CB's.
 
     boiled down to a simple example: 
     CB1 is a function to turn a GPIO pin on at x time. 
@@ -75,3 +74,37 @@ These 3 are all just different instances of the same "Jane", they simply represe
 
       at y time, the function configures a JSON representation of the GPIO pin being off, 
       and passes to the janett c++ GPIO reader/writer
+
+
+Well what about that bad code that technically works, but is really buggy, and no-one likes? This is were we start to look at the concept of crowd-sourcing at its finest. Public codes are all free. Good CD's get voted up. Bad CB's get voted down. If you don't like a CB, write one yourself, or combine until you get what you need.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
