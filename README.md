@@ -3,14 +3,14 @@ Any configs, setup requirements, how-to's or otherwise should find itself in her
 
 # Janus
 
-  # Intent: 
+  Intent: 
     In order to further the development of a home use level of robotics and automation design, we must first enable the layman, with only basic computer skills, to create the robotics they need in a hobby type time-frame. It is these laymen with hobbies throughout history that have devised ingenious ways of instituting new technologies, and handing them a tool to abstract away all of the computing issues, and to let the just "do the thing," is the first step towards innumberable technological, and quality of life advances. The intent of Jane is to be the tool that allows this to happen.
 
 
 # Architectural naming conventions:
 
   bot-piece - any computer.
-            - in context, think of it as any micro-computer, but really though, any computer with wifi access.
+  - in context, think of it as any micro-computer, but really though, any computer with wifi access.
 
   Janus - the name of the entire suite including front facing user api, as well as the individual bot-pieces, and everything in between, in short, Janus would be the 'system name' as Janus is a system of systems.
 
@@ -48,11 +48,11 @@ Any configs, setup requirements, how-to's or otherwise should find itself in her
 
   Users have a profile, and can publish "code-blocks", these may be either public or private - private accounts should pay ie. Github
 
-    if published public
+    if CB's are published public
       - everyone can see them; They don't look like code. They look like color coded buttons, or bricks, or symbols... you get the point, something small, drag and droppable, and looks nothing like a piece of code.
       - theses code-blocks can have other code blocks dropped in them, this actually makes a new code-block. The new code-block executes both blocks of code, either synchronously or asynchronously, dependant on the function
 
-    if published private 
+    if CB's are published private 
       - only allowable entities may access them ie. team pages, company pages, etc
 
     Users can take any code blocks they have access to, and combine them with other code blocks in a stacking manor.
