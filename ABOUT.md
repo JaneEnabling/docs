@@ -32,6 +32,7 @@ These 3 are all just different instances of the same "Jane", they simply represe
         ducted fans). The JaneBrain would contain the CB that manages which fan(s) 
         to change, and in what way, then sends those commands along as a JSON 
         singleton object to be written to output, or as a stored CB.
+        --This is an extreme example, that I hope will be accomplished someday
 
 ### Janett - An "end node" bot-piece, 
 - Controls only self pin-writes/self outputs utilizing the jane++ software
